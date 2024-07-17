@@ -1,0 +1,303 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Pondicherry Unversity</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+   <div class="contain">
+   	<div class="header">
+
+   	    <div class="logo">
+   			<img src="Logo.PNG">
+   		</div>
+   		<div class="name">
+   			<h1>PONDICHERRY UNVERSITY</h1>
+   		</div>
+   	</div>
+   		<div class="navbar">
+   			<ul>
+   				<li><a href="Home">Home</a></li>
+   				<li><a href="Login">Login</a></li>
+   				<li><a href="Registration">Registration</a></li>
+   				<li><a href="Catalogue">Catalogue</a></li>
+   				<li><a href="Cart">Cart</a></li>
+   			</ul>
+   			<div class="home">
+   				<h1>
+   					Home
+   				</h1>
+   				<p1>
+   					 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   					ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   				</p1>
+
+   			</div>
+   			<div class="Login">
+   				<h1>
+   					Login
+   				</h1>
+   				<label for="Email" class="labe">Enter User Name :</label><br><br>
+   				<input  class="inp" type="text" name="Email" pattern="@gmai.com" placeholder="User Name...."<br><br>
+              <label for="Password" class="labe">Enter Passward:</label><br><br>
+   				<input  class="inp" type="Passward" name="Email" minlength="8" placeholder="Enter Passward...">
+   				<br><br>
+
+   				<button class="but">Login</button>
+   				<br><br>
+   				<label  class="labe">Your Are not alredy Login </label>
+   				<button>click</button>
+
+                
+   			</div>
+   			<div class="reg">
+   				<h1>
+   					Registration
+   				</h1>
+   				<label for="Email" class="labe"> :</label><br><br>
+   				<input  class="inp" type="text" name="Email" pattern="@gmai.com" placeholder="User Name...."<br><br>
+              <label for="Password" class="labe">Enter Passward:</label><br><br>
+   				<input  class="inp" type="Passward" name="Email" minlength="8" placeholder="Enter Passward...">
+   				<br><br>
+
+   				<button class="but">Sumbit</button>
+
+                
+   			</div>
+   			<br><br>
+   		</div>
+
+
+   </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Buy And store- Home</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Logo</div>
+            <div class="college-name">Buy And Sell</div>
+            <nav class="nav-links">
+                <a href="#" onclick="loadContent('home')">Home</a>
+                <a href="#" onclick="loadContent('login')">Login</a>
+                <a href="#" onclick="loadContent('registration')">Registration</a>
+                <a href="#" onclick="loadContent('catalogue')">Catalogue</a>
+                <a href="#" onclick="loadContent('cart')">Cart</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content container">
+        <aside class="left-frame">
+            <a href="#" onclick="loadContent('home')">Home</a>
+            <a href="#" onclick="loadContent('cse')">CSE</a>
+            <a href="#" onclick="loadContent('ece')">ECE</a>
+            <a href="#" onclick="loadContent('eee')">EEE</a>
+            <a href="#" onclick="loadContent('civil')">CIVIL</a>
+        </aside>
+        <section class="right-frame" id="right-frame">
+            <p>Welcome to the Online Book Store. Here you can find a wide variety of books for different fields of study.</p>
+        </section>
+    </main>
+    <script>
+        function loadContent(page) {
+            const content = {
+                home: `<p>Welcome to the Online Book Store. Here you can find a wide variety of books for different fields of study.</p>`,
+                login: `
+                    <h2>Login</h2>
+                    <form action="submit_login.html" method="post">
+                        <div class="form-group">
+                            <label for="login"><b>Login:</b></label><br>
+                            <input type="text" id="login" name="login" placeholder="Ex-gaurav123@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><b>Password:<b></label><br>
+                            <input type="password" id="password" name="password" minlength="8" required><br>
+                        </div>
+                        <div class="form-group">
+                             <br>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                `,
+                registration: `
+                    <h2>Registration</h2>
+                    <form action="submit_registration.html" method="post">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Register</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                `,
+                catalogue: `
+                    <h2>Catalogue</h2>
+                    <div class="book">
+                        <img src="images.Jpeg" alt="Book 1">
+                        <div class="book-info">
+                            <h3>Introduction to Algorithms</h3>
+                            <p>Rs. 850</p>
+                            <p>A comprehensive book on algorithms, covering all essential topics.</p>
+                            <button class="cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="images.Jpeg" alt="Book 2">
+                        <div class="book-info">
+                            <h3>Computer Networks</h3>
+                            <p>Rs. 650</p>
+                            <p>An in-depth guide to computer networking concepts and protocols.</p>
+                            <button class="cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="images.Jpeg" alt="Book 3">
+                        <div class="book-info">
+                            <h3>Microelectronics</h3>
+                            <p>Rs. 900</p>
+                            <p>A detailed book on microelectronics and its applications.</p>
+                            <button class="cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="images.Jpeg" alt="Book 4">
+                        <div class="book-info">
+                            <h3>Digital Signal Processing</h3>
+                            <p>Rs. 750</p>
+                            <p>Comprehensive coverage of DSP concepts and techniques.</p>
+                            <button class="cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                `,
+                cart: `
+                    <h2>Cart</h2>
+                    <p>Your cart is currently empty.</p>
+                `,
+                cse: `
+                    <h2>CSE Books</h2>
+                    <div class="book">
+                        <img src="images.jpeg" alt="Book 1">
+                        <div class="book-info">
+                            <h3>Introduction to Algorithms</h3>
+                            <p>Rs. 850</p>
+                            <p>A comprehensive book on algorithms, covering all essential topics.</p>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="images.jpeg" alt="Book 2">
+                        <div class="book-info">
+                            <h3>Computer Networks</h3>
+                            <p>Rs. 650</p>
+                            <p>An in-depth guide to computer networking concepts and protocols.</p>
+                        </div>
+                    </div>
+                `,
+                ece: `
+                    <h2>ECE Books</h2>
+                    <div class="book">
+                        <img src="images.jpeg" alt="Book 3">
+                        <div class="book-info">
+                            <h3>Microelectronics</h3>
+                            <p>Rs. 900</p>
+                            <p>A detailed book on microelectronics and its applications.</p>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="images.jpeg" alt="Book 4">
+                        <div class="book-info">
+                            <h3>Digital Signal Processing</h3>
+                            <p>Rs. 750</p>
+                            <p>Comprehensive coverage of DSP concepts and techniques.</p>
+                        </div>
+                    </div>
+                `,
+                eee: `
+                    <h2>EEE Books</h2>
+                    <div class="book">
+                        <img src="images.jpeg" alt="Book 5">
+                        <div class="book-info">
+                            <h3>Electrical Machines</h3>
+                            <p>Rs. 800</p>
+                            <p>An essential book on the principles and applications of electrical machines.</p>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="images.jpeg" alt="Book 6">
+                        <div class="book-info">
+                            <h3>Power Electronics</h3>
+                            <p>Rs. 700</p>
+                            <p>A thorough guide to power electronics and its industrial applications.</p>
+                        </div>
+                    </div>
+                `,
+                civil: `
+                    <h2>CIVIL Books</h2>
+                    <div class="book">
+                        <img src="book7.jpg" alt="Book 7">
+                        <div class="book-info">
+                            <h3>Structural Analysis</h3>
+                            <p>Rs. 850</p>
+                            <p>An extensive book on structural analysis and design techniques.</p>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="book8.jpg" alt="Book 8">
+                        <div class="book-info">
+                            <h3>Concrete Technology</h3>
+                            <p>Rs. 750</p>
+                            <p>In-depth coverage of concrete technology and its applications.</p>
+                        </div>
+                    </div>
+                `
+            };
+
+            const rightFrame = document.getElementById('right-frame');
+            rightFrame.innerHTML = content[page] || `<p>Content not found.</p>`;
+        }
+    </script>
+</body>
+</html>
