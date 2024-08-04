@@ -1,0 +1,219 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*background-color: #f4f4f4;*/
+    /*color: #333;*/
+    font-weight: bold;
+    background-image: url("backimage.jpeg");
+}
+.image{
+    height: 90px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-shadow:2px 4px 6px 2px black; 
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:wrap; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.college-name {
+    font-size: 20px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    /*color: white;*/
+    text-decoration: none;
+    font-weight: bold;
+    font-size:20px; 
+}
+
+.nav-links a:hover {
+    border-bottom: 1px solid  red;
+    box-shadow:2px 1px 1px 1px black; 
+
+}
+
+.main-content {
+
+    display: flex;
+    margin-top: 20px;
+    /*background-image: url("backimage.jpeg");*/
+}
+
+.left-frame {
+    width: 20%;
+    background-color:rgb(160,150,60,0.7);
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.left-frame a {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left-frame a:hover {
+    text-decoration: underline;
+}
+
+.right-frame {
+    width: 75%;
+    padding: 20px;
+    background-color: rgb(160,150,60,0.5);
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.book {
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.book img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.book-info {
+    max-width: calc(100% - 120px);
+}
+
+.book-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.book-info p {
+    margin: 5px 0;
+}
+
+.cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.cart-button:hover {
+    background-color: #45a049;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+.cart-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-book-image {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-book-details {
+    flex-grow: 1;
+    font-size:18px;
+    font-weight: bold; 
+}
+
+.checkout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.checkout-button:hover {
+    background-color: #1976D2;
+}
